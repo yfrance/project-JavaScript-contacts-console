@@ -45,6 +45,7 @@ const showContact = contact => {
   }
 };
 
+showContact(myContact);
 // --------------------------------------------------------------
 console.log();
 // Filter Contact
@@ -74,7 +75,9 @@ const addContact = {
   hobby: "micin"
 };
 
-// myContact.push(addContact);
+myContact.push(addContact);
+
+showContact(myContact);
 
 console.log();
 // Remove Contact
@@ -83,8 +86,4 @@ const removeContact = () => {
   showContact(myContact);
   console.log("delete successful");
 };
-
-showContact(myContact);
-// showContact(filteredContact);
-// showContact(myContact);
-// removeContact();
+removeContact();
